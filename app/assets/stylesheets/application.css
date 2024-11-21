@@ -5,6 +5,14 @@ body {
 }
 
 .submit_button {
-  background-color: #7CC0CF !important;
+  background-color: #688A83 !important;
   border: 2px solid #688A83 !important;
+}
+
+section.input {
+  display: block;
+}
+
+section.input a {
+  color: #688A83;
 }
