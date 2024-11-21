@@ -27,6 +27,7 @@ class WeatherService < ApplicationService
 
   # Returns results or nil if request fails
   def make_weather_request
+    # https://weatherstack.com/documentation#current_weather
     response = HTTParty.get("http://api.weatherstack.com/current?access_key=#{ENV['WEATHER_API_KEY']}&units=f&query=#{@zipcode}")
     # Weatherstack returns a :200 even if there is an error, so weather_request_response.success? would be a false lead
     # In a production setting this would be more complex--we'd log the various possible error types and build alarms based on them
