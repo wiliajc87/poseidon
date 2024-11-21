@@ -1,24 +1,6 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Poseidon
+A diskless weather app
 
-Things you may want to cover:
+<!-- REMINDER BEFORE FINISHING, YOU NEED THE SECRETS.YML FOR THIS TO WORK -->
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
