@@ -1,0 +1,6 @@
+<h1>Weather#input</h1>
+<%= form_with url: "/display", class: 'testing', method: :get do |form| %>
+  <%= form.label :query, "Your five digit zipcode:" %>
+  <%= form.search_field :zipcode %>
+  <%= form.submit "Search" %>
+<% end %>

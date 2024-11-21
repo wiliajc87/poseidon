@@ -38,5 +38,10 @@ module Poseidon
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Load secrets.yml and inject the weather API key into ENV
+    file_path = File.join(Rails.root, "config", "secrets.yml")
+    config_keys = HashWithIndifferentAccess.new(YAML.load(IO.read(file_path)))[Rails.env]
+    config_keys.each { |k, v| ENV[k.upcase] ||= v }
   end
 end
