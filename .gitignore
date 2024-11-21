@@ -81,4 +81,9 @@ rerun.txt
 pickle-email-*.html
 
 /config/secrets.yml
+<<<<<<< HEAD
 >>>>>>> ec77671 (configuration, controller, weatherservice and specs)
+=======
+/app/assets/builds/*
+!/app/assets/builds/.keep
+>>>>>>> 44cde9b (views built and minor styling added)

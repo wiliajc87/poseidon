@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css">
   <%= javascript_include_tag "application"%>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
@@ -25,7 +27,15 @@
 </head>
 
 <body>
+  <main>
+  <% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+  <% end %>
+
   <%= yield %>
+  </main>
 </body>
 
 </html>
